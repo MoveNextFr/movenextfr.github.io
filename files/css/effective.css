@@ -1,0 +1,12 @@
+.logo_text{
+    font-family: 'Montserrat';
+    font-size: 24px;
+}
+
+.logo_text .logo_text_black{
+    color: black;
+}
+
+.logo_text .logo_text_white{
+    color: white;
+}
