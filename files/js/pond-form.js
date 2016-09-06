@@ -62,7 +62,6 @@ jQuery(window).load(function($) {
 			
 			} else {
 				jQuery("#form-note").fadeOut(200);
-				
 				if (form_action && form_action !== '') {
 
 
@@ -71,12 +70,6 @@ jQuery(window).load(function($) {
 						"crossDomain": true,
 						"url": form_action,
 						"method": "POST",
-						"headers": {
-							"authorization": "Basic aW1paGFsY2VhMToyYWQyMjI3ODJkMDA0NWFjZmMyOTNhMmIyM2I2ZWMyYQ==",
-							"cache-control": "no-cache",
-							"postman-token": "fcf612c5-343e-6bce-b4e3-e932113fe33a"
-						},
-						"dataType":"json",
 						"data": $form.serialize() };
 
 					var query = jQuery.ajax(settings);
