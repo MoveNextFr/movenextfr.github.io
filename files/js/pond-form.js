@@ -76,7 +76,7 @@ jQuery(window).load(function($) {
 							"cache-control": "no-cache",
 							"postman-token": "fcf612c5-343e-6bce-b4e3-e932113fe33a"
 						},
-						"dataType":"jsonp",
+						"dataType":"json",
 						"data": $form.serialize() };
 
 					var query = jQuery.ajax(settings);
