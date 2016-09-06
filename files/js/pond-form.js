@@ -1,14 +1,14 @@
-/*-----------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
+//
+// 	Script - Form Validation and Ajax Comments
+//
+//-----------------------------------------------------------------------------------
 
- 	Script - Form Validation and Ajax Comments
- 
------------------------------------------------------------------------------------*/
 
-
-jQuery(window).load(function($) {	
+jQuery(window).load(function($) {
 	
 	
-	/*---------------------------------------------- 
+	/*----------------------------------------------
 				  F O R M   V A L I D A T I O N 
 	------------------------------------------------*/
 	jQuery("body").on("click", 'input[type="submit"]', function(event) {
@@ -63,16 +63,15 @@ jQuery(window).load(function($) {
 			} else {
 				jQuery("#form-note").fadeOut(200);
 				if (form_action && form_action !== '') {
-
-
-					var settings = {
+					$form.submit();
+/*					var settings = {
 						"async": true,
 						"crossDomain": true,
 						"url": form_action,
 						"method": "POST",
 						"data": $form.serialize() };
 
-					var query = jQuery.ajax(settings);
+					//var query = jQuery.ajax(settings);
 				   query.done(function (response) {
 					   jQuery("#form-note").html("<div class=\"alert alert-confirm\"><strong>Confirm</strong>: Le message à bien été envoyé. Merci! </div>");
 					   jQuery("#form-note").delay(200).fadeIn(200);
@@ -80,7 +79,7 @@ jQuery(window).load(function($) {
 					query.error(function(error){
 						jQuery("#form-note").html("<div class=\"alert alert-error\"><strong>Oups...</strong>: Une erreur est inervenue!</div>");
 						jQuery("#form-note").delay(200).fadeIn(200);
-					});
+					});*/
 
 				return false;
 				} else {
