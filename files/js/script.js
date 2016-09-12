@@ -324,7 +324,7 @@ jQuery(window).load(function($) {
 			autoplay: false,
 			autoHeight : true,
 			navigationText : false,
-			rewindNav: false
+			rewindNav: true
 		});
 		
 	}
