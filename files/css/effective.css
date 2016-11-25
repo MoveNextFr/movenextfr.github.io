@@ -3,10 +3,18 @@
     font-size: 24px;
 }
 
-.logo_text .logo_text_black{
+.logo_text_black{
     color: black;
 }
 
-.logo_text .logo_text_white{
+.logo_text_white{
     color: white;
+}
+
+.indent50{
+    padding-left: 50px;
+}
+
+.indent100{
+    padding-left: 100px;
 }
